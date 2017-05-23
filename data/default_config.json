@@ -1,0 +1,4 @@
+{
+	"numClasses": {"min": 2, "max": 10},
+	"capacity": {"min": 10, "max": 100},
+}
