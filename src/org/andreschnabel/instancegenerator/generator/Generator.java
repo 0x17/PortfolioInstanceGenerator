@@ -51,7 +51,7 @@ public final class Generator {
         double x = Utils.randDoubleInRange(0.5, 2.0);
         cd.expD = (capacity / numClasses) / cd.consumptionPerReq * x;
         double varCoeff = Utils.randBool() ? 0.1 : 0.3;
-        cd.devD = cd.expD / varCoeff;
+        cd.devD = cd.expD * varCoeff;
 
         return cd;
     }

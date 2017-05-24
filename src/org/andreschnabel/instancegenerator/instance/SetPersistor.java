@@ -7,15 +7,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class SetPersistor {
+public final class SetPersistor {
 
-    private final Gson gson;
-
-    public SetPersistor(Gson gson) {
-        this.gson = gson;
-    }
-
-    public void persistInstances(List<InstanceData> instances, File outPath, String prefix, String suffix) {
+    public static void persistInstances(Gson gson, List<InstanceData> instances, File outPath, String prefix, String suffix) {
         int ctr = 1;
         for(InstanceData instance : instances) {
             try {
